@@ -54,7 +54,6 @@ const homeFunction = () => {
     let p2 = document.createElement("p");
     p2.innerHTML = "We Serve a Variety of Fresh Dishes Plus Juices, Smoothies, and Shakes. Visit Our Menu Section for a Variety of Combo Meals, Wraps, and Grain Bowls."
     let stopBy = document.createElement("p");
-    stopBy.classList.add("footer")
     stopBy.innerHTML = 
     `
     <br>

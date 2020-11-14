@@ -178,16 +178,6 @@ const menuFunction =() => {
         let breaker = document.createElement("br");
         homeContent.appendChild(breaker);
     };
-
-    // let optionsLine = document.createElement("div");
-    // optionsLine.classList.add("line")
-    // optionsLine.style.marginTop = "50px";
-    // homeContent.appendChild(optionsLine)
-
-    // let optionsTitle = document.createElement("div");
-    // optionsTitle.classList.add("titlecard")
-    // optionsTitle.innerHTML = "OPTIONS"
-    // homeContent.appendChild(optionsTitle)
     
     let optionsFlexContainer = document.createElement("div");
     optionsFlexContainer.classList.add("flex-container-options")
