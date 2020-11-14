@@ -1,15 +1,14 @@
-body, html {
+html {
     height: 100%;
     font-family: 'Varela Round', sans-serif;
-    width: 100%;
     background-position: center;
-    background-size: 200%;
     background: linear-gradient(.85turn, #ffb98a,  #b0ce86,  #ffb98a, #b0ce86);
 }
 
 #content {
     height: 100%;
     width: 100%;
+    text-align: center;
 }
 
 #menu {
@@ -21,9 +20,8 @@ body, html {
     border-radius: 13px;
     background: rgba(72,140,81);
     overflow:scroll;
-    min-width: 820px;
-    min-height: 600px;
     border: 4px solid black;
+
 }
 
 #home {
