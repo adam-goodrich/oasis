@@ -1,8 +1,9 @@
 html {
     height: 100%;
     font-family: 'Varela Round', sans-serif;
-    background-position: center;
-    background: linear-gradient(.85turn, #ffb98a,  #b0ce86,  #ffb98a, #b0ce86);
+    background-size: cover;
+    background-repeat: repeat-y;
+    background: linear-gradient(.5turn, #ffb98a,  #b0ce86,  #ffb98a);
 }
 
 #content {
@@ -14,9 +15,9 @@ html {
 #menu {
     background-color: black;
     margin: auto;
-    padding: 22px;
-    height: 82%;
-    width: 85%;
+    /* padding: 22px; */
+    height: 95%;
+    width: 90%;
     border-radius: 13px;
     background: rgba(72,140,81);
     overflow:scroll;
