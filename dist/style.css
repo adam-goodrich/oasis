@@ -1,63 +1,97 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
 html {
     height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
     font-family: 'Varela Round', sans-serif;
-    background-size: cover;
-    background-repeat: repeat-y;
+    /* background-size: cover; */
     background: linear-gradient(.5turn, #ffb98a,  #b0ce86,  #ffb98a);
 }
 
 #content {
     height: 100%;
     width: 100%;
-    text-align: center;
 }
 
 #menu {
-    background-color: black;
-    margin: auto;
-    /* padding: 22px; */
-    height: 95%;
-    width: 90%;
-    border-radius: 13px;
+    padding: 22px;
+    height: 100%;
+    width: 100%;
     background: rgba(72,140,81);
-    overflow:scroll;
-    border: 4px solid black;
+    overflow: scroll;
+    /* border-top: 4px solid black; */
+    
 
 }
 
 #home {
-    padding-top: 1vw;
+    padding-top: 80px;
     text-align: center;
-    margin: auto;
-    width: 90%;
+    width: 100%;
     height: fit-content;
-    font-size: 3.2vh;
+    font-size: 2.2rem;
     min-width: 500px;
 }
 
 .topnav {
-    overflow: hidden;
-    background: rgba(0,0,0,0);
-    padding-left: 7.5vw;
-    padding-top: 2.5vh;
+    background: #ffb98a;
+    padding-left: 20px;
+    padding-top: 2vh;
     min-width: 600px;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    width: 100%;
+    border-bottom: 5px solid black;
+
 }
 
 .topnav button {
+    border-radius: 10px 10px 0 0;
     float: left;
     color: #b0ce86;
     text-align: center;
     padding: 10px;
     padding-bottom: 5px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     background-color: black;
     outline: none;
-    border-radius: 20px 20px 0 0;
     border: 3px solid black;
-    border-bottom: 3px solid black;;
     margin: 0%;
     min-width: 90px;
+    
 }
 
 .topnav button:hover {
@@ -84,9 +118,26 @@ a {
     color: rgba(72,140,81);
 }
 
+@keyframes logoAnimation {
+    0% { width: 50%; opacity: 0; margin-bottom: 1500px; margin-top: 60px;}
+    50% {width: 45%; opacity: 1; margin-bottom: 1000px;}
+    100% {width: 10% }
+}
+
+.logoHome {
+    border-radius: 10%;
+    width: 10%;
+    min-width: 225px;
+    transition: .5s;
+    border: 3.5px solid black;
+    box-shadow: 2px 1px rgb(1, 96, 1);
+    animation-name: logoAnimation;
+    animation-duration: 4s;
+}
+
 .logo {
     border-radius: 10%;
-    width: 18%;
+    width: 10%;
     min-width: 225px;
     transition: .5s;
     border: 3.5px solid black;
@@ -96,6 +147,7 @@ a {
 .logo:hover {
     box-shadow: 3px 2px rgb(1, 96, 1);
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 
@@ -299,5 +351,6 @@ th {
     padding: 20px;
     font-size: 30px;
 }
+
 
 

@@ -44,7 +44,6 @@ const contactFunction = () => {
 
     let link = document.createElement("a");
     // web address
-    link.href = "#home"
     link.onclick = () => {
         removeAllChildNodes(home)
         homeFunction()

@@ -71,7 +71,6 @@ const galleryFunction = () => {
 
     let link = document.createElement("a");
     // web address
-    link.href = "#home"
     link.onclick = () => {
         removeAllChildNodes(home)
         homeFunction()
@@ -106,6 +105,7 @@ const galleryFunction = () => {
     }
 
     let stopBy = document.createElement("p");
+    stopBy.classList.add("footer")
     stopBy.innerHTML = 
     `
     <br>

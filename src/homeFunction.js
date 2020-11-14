@@ -4,6 +4,7 @@ import contactFunction from './contactFunction'
 import galleryFunction from './galleryFunction';
 
 const homeFunction = () => {
+
     let home = document.querySelector("#content");
     let nav = document.createElement("div");
     nav.classList.add("topnav");
@@ -42,10 +43,9 @@ const homeFunction = () => {
 
     let link = document.createElement("a");
     // web address
-    link.href = "#home"
     homeContent.appendChild(link)
     let logo = document.createElement("img");
-    logo.classList.add("logo")
+    logo.classList.add("logoHome")
     logo.src = "./images/logo.jpg"
     link.appendChild(logo)
 
@@ -54,6 +54,7 @@ const homeFunction = () => {
     let p2 = document.createElement("p");
     p2.innerHTML = "We Serve a Variety of Fresh Dishes Plus Juices, Smoothies, and Shakes. Visit Our Menu Section for a Variety of Combo Meals, Wraps, and Grain Bowls."
     let stopBy = document.createElement("p");
+    stopBy.classList.add("footer")
     stopBy.innerHTML = 
     `
     <br>
