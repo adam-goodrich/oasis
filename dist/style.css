@@ -50,9 +50,6 @@ body {
     width: 100%;
     background: rgba(72,140,81);
     overflow: scroll;
-    /* border-top: 4px solid black; */
-    
-
 }
 
 #home {
@@ -242,10 +239,36 @@ th {
     transform: scale(1.005);
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 600px) {
     .flex-container {
         justify-content: center;
         margin-left: 0;
+    }
+
+    #home {
+        padding-top: 130px;
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+        font-size: 2.2rem;
+        min-width: 500px;
+    }
+
+    @keyframes logoAnimation {
+        0% { width: 90%; opacity: 0; margin-bottom: 3000px; margin-top: 60px;}
+        50% {width: 70%; opacity: 1;}
+        100% {width: 75% }
+    }
+    
+    .logoHome {
+        border-radius: 10%;
+        width: 75%;
+        min-width: 225px;
+        transition: .5s;
+        border: 3.5px solid black;
+        box-shadow: 2px 1px rgb(1, 96, 1);
+        animation-name: logoAnimation;
+        animation-duration: 4s;
     }
 }
 
