@@ -170,16 +170,16 @@ a {
     line-height: 1.1;
     display: flex;
     justify-content: center;
-    background-color: #d6faa3;
+    background-color: #fffdfe;
     height: fit-content;
     margin: auto;
     margin-top: -30px;
     text-align:left;
     font-size: 22px; 
     padding: 25px;
-    border: 2px solid black;
+    border: 5px solid black;
     opacity: 0.97;
-    box-shadow: 2px 3px rgb(1, 96, 1);
+    box-shadow: 3px 4px rgb(1, 96, 1);
     color: black;
     border-radius: 10px;
 }
@@ -314,15 +314,15 @@ th {
         line-height: 1.1;
         display: flex;
         justify-content: center;
-        background-color: #d6faa3;
+        background-color: #fffdfe;
         height: fit-content;
         margin: auto;
         margin-top: -30px;
         text-align:left;
         padding: 25px;
-        border: 2px solid black;
+        border: 5px solid black;
         opacity: 0.97;
-        box-shadow: 2px 3px rgb(1, 96, 1);
+        box-shadow: 4px 5px rgb(1, 96, 1);
         color: black;
         border-radius: 10px;
     }
