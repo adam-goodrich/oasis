@@ -116,8 +116,9 @@ a {
 }
 
 @keyframes logoAnimation {
-    0% { width: 50%; opacity: 0; margin-bottom: 1500px; margin-top: 60px;}
-    50% {width: 45%; opacity: 1; margin-bottom: 1000px;}
+    0% { width: 35%; opacity: 0; margin-bottom: 1500px; margin-top: 60px;}
+    50% {width: 30%; opacity: 1;}
+    75% {width: 35%; opacity: 1; margin-bottom: 1500px;}
     100% {width: 10% }
 }
 
