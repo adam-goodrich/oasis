@@ -122,7 +122,6 @@ const galleryFunction = () => {
     <a href="https://www.yelp.com/biz/oasis-vegan-veggie-parlor-dorchester" target="_blank">
     <img src="./images/yelp.png" alt="yelp Logo" class="grub">
     </a>
-    <br style="height=10px;">
     `
 
     homeContent.appendChild(stopBy)

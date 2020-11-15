@@ -188,7 +188,7 @@ const menuFunction =() => {
         p1.classList.add("card-options")
         p1.innerHTML = `
         <b>${options[i].name}</b>
-        <p style="font-size: 1.2rem; color:black; line-height:1.2; font-weight: 20; width: fit-content; ">
+        <p style="color:black; line-height:1.2; font-weight: 20; width: fit-content; ">
         ${options[i].desc}
         </p>`
         optionsFlexContainer.appendChild(p1)
