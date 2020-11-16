@@ -365,7 +365,6 @@ const menuFunction =() => {
     let stopBy = document.createElement("p");
     stopBy.innerHTML = 
     `
-    Please stop by and visit us soon or visit us on social media <br><br>
     <a href="https://www.grubhub.com/restaurant/oasis-vegan-veggie-parlor-340-washington-st-dorchester/539264" target="_blank">
     <img src="./images/grub.png" alt="Grubhub Logo" class="grub">
     </a>

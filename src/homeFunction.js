@@ -49,31 +49,24 @@ const homeFunction = () => {
     logo.src = "./images/logo.jpg"
     link.appendChild(logo)
 
-    let p1 = document.createElement("p");
-    p1.innerHTML = "<br>Oasis Vegan Veggie Parlor is a Restaurant in Boston Located in the Four Corners Neighborhood of Dorchester."
-    let p2 = document.createElement("p");
-    p2.innerHTML = "We Serve a Variety of Fresh Dishes Plus Juices, Smoothies, and Shakes. Visit Our Menu Section for a Variety of Combo Meals, Wraps, and Grain Bowls."
-    let stopBy = document.createElement("p");
-    stopBy.innerHTML = 
-    `
-    <br>
-    Please stop by and visit us soon or visit us on social media <br><br>
-    <a href="https://www.grubhub.com/restaurant/oasis-vegan-veggie-parlor-340-washington-st-dorchester/539264" target="_blank">
-    <img src="./images/grub.png" alt="Grubhub Logo" class="grub">
-    </a>
-    <a href="https://www.facebook.com/OasisVeganVeggieParlor" target="_blank">
-    <img src="./images/facebook.png" alt="facebook Logo" class="grub">
-    </a>
-    <a href="https://www.instagram.com/oasisvvp/?hl=en" target="_blank">
-    <img src="./images/insta.png" alt="instagram Logo" class="grub">
-    </a>
-    <a href="https://www.yelp.com/biz/oasis-vegan-veggie-parlor-dorchester" target="_blank">
-    <img src="./images/yelp.png" alt="yelp Logo" class="grub">
-    </a>`
+    let address = document.createElement("p");
+    address.innerHTML = "340 Washington St, Boston, MA 02121"
 
+    let number = document.createElement("p");
+    number.innerHTML = "(617) 237-9033"
+
+    let br1 = document.createElement("br");
+    let br2 = document.createElement("br");
+
+    let p1 = document.createElement("p");
+    p1.innerHTML = "<br>Oasis Vegan Veggie Parlor is a restaurant in Boston located in the four corners neighborhood of Dorchester."
+    let p2 = document.createElement("p");
+    p2.innerHTML = "We serve a variety of fresh dishes plus Juice, smoothies, and skaes. Visit our menu section for a variety of combo meals, wraps, and grain bowls."
+
+    homeContent.appendChild(address)
+    homeContent.appendChild(number)
     homeContent.appendChild(p1)
     homeContent.appendChild(p2)
-    homeContent.appendChild(stopBy)
     
     document.getElementById("menuButton").addEventListener("click", function(e) {
         removeAllChildNodes(home)
