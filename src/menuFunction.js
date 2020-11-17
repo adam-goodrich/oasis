@@ -95,17 +95,17 @@ addFoodToMenu("options", "Stew Options", "", "Miser Wat (Ethiopian Spicy Lentils
 addFoodToMenu("options", "Veggie Options", "", "Curry Cabbage, Seasoned Kale, Oasis Veggie Delight")
 
 // MEALS
-addFoodToMenu("meal", "The Oasis Everything Plate", "- $19.44", "Our large taster's choice plate with a variety of dishes, 2 Grains, 2 Stews and 2 Veggies.")
-addFoodToMenu("meal", "Large Plate", "- $15.49", "Severing 1 grain, 2 Stews 2 Veggies")
-addFoodToMenu("meal", "Medium Plate", "- $13.15", "Severing 1 Grain, 2 Stews, 1 Veggie")
-addFoodToMenu("meal", "Small Plate", "- $9.75", "Serving of 1 Grain, 1 Stew, 1 Veggie")
+addFoodToMenu("meal", "The Oasis Everything Plate", "- $19.44", "Our large taster's choice plate with a variety of dishes. 2 Grains, 2 Stews, and 2 Veggies.")
+addFoodToMenu("meal", "Large Plate", "- $15.49", "Serving 1 Grain, 2 Stews, and 2 Veggies")
+addFoodToMenu("meal", "Medium Plate", "- $13.15", "Serving 1 Grain, 2 Stews, and 1 Veggie")
+addFoodToMenu("meal", "Small Plate", "- $9.75", "Serving of 1 Grain, 1 Stew, and 1 Veggie")
 
 
 // GRAIN BOWLS
 addFoodToMenu("grain", "Quinoa Veggie Bowl", "$14.45", "Oasis savory herb sauce drizzled over seasoned quinoa tossed with a medley of raw veggies, sesame seeds or chia seeds, and dried cranberries.")
 addFoodToMenu("grain", "Veggie Rice Bowl", "$14.45", "Fresh veggies seasoned and stirred -not fried- brown rice (spicy and tofu options available).")
 addFoodToMenu("grain", "Oasis Vegan Burrito Bowl", "$14.45", "Seasoned brown rice and hot veggies smothered with vegan cheese and miser wat.")
-addFoodToMenu("grain", "African Pot Bowl", "$14.45", "Our spicy Oasis African couscous with fresh kale alongside an array of fresh veggies. (Contains Gluten)")
+addFoodToMenu("grain", "African Pot Bowl", "$14.45", "Our spicy Oasis African couscous with fresh kale along side an array of fresh veggies. (Contains Gluten)")
 addFoodToMenu("grain", "Veggie Korma Bowl", "$14.45", "taste of India in a rich savory coconut curry sauce drenched over an array of veggie delight and brown rice (spicy optional).")
 addFoodToMenu("grain", "The Oasis Bowl", "$14.45", "Our favorite grain of the day and veggie medley seasoned to perfection with love!")
 
@@ -113,13 +113,13 @@ addFoodToMenu("grain", "The Oasis Bowl", "$14.45", "Our favorite grain of the da
 addFoodToMenu("wrap", "Oasis Vegan Burritto", "$12.84", "Melted vegan cheese, seasoned brown rice, fresh veggies, miser wat, and Oasis dressings.")
 addFoodToMenu("wrap", "The Oshun Wrap", "$12.84", "Melted vegan cheese over kale and curry chickpea stew.")
 addFoodToMenu("wrap", "The Shango Wrap", "$12.84", "Miser wat (Ethiopian high protein lentils), spicy veggies, and vegan cheese (optional).")
-addFoodToMenu("wrap", "Oasis Mushroom and Cheese Wrap", "$13.12", "Savory seasoned mushrooms, red onions, tomatoes, red bell peppers grilled with melted vegan cheese.")
+addFoodToMenu("wrap", "Oasis Mushroom and Cheese Wrap", "$13.12", "Savory seasoned mushrooms, red onions, tomatoes, red bell peppers, grilled with melted vegan cheese.")
 
 // JUICES
-addFoodToMenu("juice", "Mango Moon", "$6.96", "Mangos, Tumeric, Almondmilk, cinnimon, agave, Spice")
+addFoodToMenu("juice", "Mango Moon", "$6.96", "Mangos, turmeric, almond milk, cinnamon, agave, Spice")
 addFoodToMenu("juice", "The Oasis Ginger Bomb Juice", "$6.96", "Fresh squeezed ginger root, organic apple juice, and a dash of aid digesting cayenne.")
 addFoodToMenu("juice", "Green Bliss Juice", "$6.96", "Organic apple juice, a sprinkle of high nutritious spirulina and moringa, fresh kale, mint leaves, and a variety of green veggies.")
-addFoodToMenu("juice", "Golden Milk Shake", "$6.96", "Natural anti-inflammatory turmeric root, a hint of cinnamon and spices.")
+addFoodToMenu("juice", "Golden Milk Shake", "$6.96", "Natural anti-inflammatory turmeric root, a hint of cinnamon and other spices.")
 
 // SIDES
 addFoodToMenu("side", "The Oasis Mac and Cheese Pie", "$5.89", "Seasoned pasta and vegan cheese slowly baked to perfection! (Contains Gluten)")
@@ -387,6 +387,11 @@ const menuFunction =() => {
     </a>
     `
     footer.appendChild(stopBy)
+
+    let copyright = document.createElement("p");
+    copyright.classList.add("copyright");
+    copyright.innerHTML = `© 2020 Oasis Vegan Veggie Parlor`
+    footer.appendChild(copyright)
 
     document.getElementById("homeButton").addEventListener("click", function(e) {
         removeAllChildNodes(home)

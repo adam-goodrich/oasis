@@ -109,6 +109,12 @@ const homeFunction = () => {
     `
     footer.appendChild(stopBy)
 
+    let copyright = document.createElement("p");
+    copyright.classList.add("copyright");
+    copyright.innerHTML = `© 2020 Oasis Vegan Veggie Parlor`
+    footer.appendChild(copyright)
+
+
     document.getElementById("homeButton").addEventListener("click", function(e) {
         removeAllChildNodes(home)
         homeFunction();
