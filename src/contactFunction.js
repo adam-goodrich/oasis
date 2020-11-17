@@ -78,6 +78,7 @@ const contactFunction = () => {
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcN_GoYSEVYa0y1iN_QL7GaOFV7PldUCRzh8sQlKGoL2v9vg/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     `
     let contactContainer = document.createElement("div");
+    contactContainer.classList.add("contactContainer")
     homeContent.appendChild(contactContainer)
 
     contactContainer.appendChild(hours)
@@ -92,6 +93,9 @@ const contactFunction = () => {
     homeContent.appendChild(map)
 
     homeContent.appendChild(form)
+
+    homeContent.appendChild(br1)
+
 
 
       // Initialize and add the map
