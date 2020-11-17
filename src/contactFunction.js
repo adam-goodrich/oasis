@@ -48,10 +48,10 @@ const contactFunction = () => {
 
 
     let p1 = document.createElement("p");
-    p1.innerHTML = "340 Washington St, Boston, MA 02121"
+    p1.classList.add("address")
+    p1.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033<br>"
 
-    let p2 = document.createElement("p");
-    p2.innerHTML = "(617) 237-9033<br>"
+
 
     let br1 = document.createElement("br");
     let br2 = document.createElement("br");
@@ -83,7 +83,6 @@ const contactFunction = () => {
 
     contactContainer.appendChild(hours)
     contactContainer.appendChild(p1)
-    contactContainer.appendChild(p2)
     hours.appendChild(hoursTable)
 
     homeContent.appendChild(br2)

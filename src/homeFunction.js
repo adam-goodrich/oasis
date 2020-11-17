@@ -67,13 +67,8 @@ const homeFunction = () => {
 
     let address = document.createElement("p");
     address.classList.add("copy")
-    address.innerHTML = "340 Washington St, Boston, MA 02121"
+    address.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033"
     boxContainer.appendChild(address)
-
-    let number = document.createElement("p");
-    number.classList.add("copy")
-    number.innerHTML = "(617) 237-9033"
-    boxContainer.appendChild(number)
 
     let p1 = document.createElement("p");
     p1.classList.add("copy")
