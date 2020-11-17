@@ -126,6 +126,9 @@ addFoodToMenu("side", "The Oasis Mac and Cheese Pie", "$5.89", "Seasoned pasta a
 
 
 const menuFunction =() => {
+    window.scrollTo(0, 0);
+
+
     let home = document.querySelector("#content");
     let nav = document.createElement("div");
     nav.classList.add("topnav");
@@ -162,17 +165,17 @@ const menuFunction =() => {
     homeContent.id = "home"
     menu.appendChild(homeContent);
 
-    let link = document.createElement("a");
-    // web address
-    link.onclick = () => {
-        removeAllChildNodes(home)
-        homeFunction()
-    }
-    homeContent.appendChild(link)
-    let logo = document.createElement("img");
-    logo.classList.add("logo")
-    logo.src = "./images/logo.jpg"
-    link.appendChild(logo)
+    // let link = document.createElement("a");
+    // // web address
+    // link.onclick = () => {
+    //     removeAllChildNodes(home)
+    //     homeFunction()
+    // }
+    // homeContent.appendChild(link)
+    // let logo = document.createElement("img");
+    // logo.classList.add("logo")
+    // logo.src = "./images/logo.jpg"
+    // link.appendChild(logo)
 
     for (let i = 0; i < 2; i++) {
         let breaker = document.createElement("br");
@@ -188,7 +191,7 @@ const menuFunction =() => {
         p1.classList.add("card-options")
         p1.innerHTML = `
         <b>${options[i].name}</b>
-        <p style="color:black; line-height:1.2; font-weight: 20; width: fit-content; ">
+        <p style="color:black; line-height:1.2; font-weight: 20; width: fit-content; padding: 10px;">
         ${options[i].desc}
         </p>`
         optionsFlexContainer.appendChild(p1)
@@ -220,7 +223,7 @@ const menuFunction =() => {
         p1.classList.add("card")
         p1.innerHTML = `
         <b>${meals[i].name} ${meals[i].price}</b>
-        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20;">
+        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20; padding: 10px;">
         ${meals[i].desc}
         </p>`
         mealFlexContainer.appendChild(p1)
@@ -252,7 +255,7 @@ const menuFunction =() => {
         p1.classList.add("card")
         p1.innerHTML = `
         <b>${grains[i].name} - ${grains[i].price}</b>
-        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20;">
+        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20; padding: 10px;">
         ${grains[i].desc}
         </p>`
         grainFlexContainer.appendChild(p1)
@@ -285,7 +288,7 @@ const menuFunction =() => {
         p1.classList.add("card")
         p1.innerHTML = `
         <b>${wraps[i].name} - ${wraps[i].price}</b>
-        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20;">
+        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20; padding: 10px;">
         ${wraps[i].desc}
         </p>`
         wrapFlexContainer.appendChild(p1)
@@ -317,7 +320,7 @@ const menuFunction =() => {
         p1.classList.add("card")
         p1.innerHTML = `
         <b>${Juices[i].name} - ${Juices[i].price}</b>
-        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20;">
+        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20; padding: 10px;">
         ${Juices[i].desc}
         </p>`
         juiceFlexContainer.appendChild(p1)
@@ -349,7 +352,7 @@ const menuFunction =() => {
         p1.classList.add("card")
         p1.innerHTML = `
         <b>${sides[i].name} - ${sides[i].price}</b>
-        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20;">
+        <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20; padding: 10px;">
         ${sides[i].desc}
         </p>`
         sideFlexContainer.appendChild(p1)
@@ -362,7 +365,12 @@ const menuFunction =() => {
         homeContent.appendChild(breaker);
     };
     
+    let footer = document.createElement("div");
+    footer.classList.add("footer");
+    home.appendChild(footer)
+
     let stopBy = document.createElement("p");
+    stopBy.classList.add("social")
     stopBy.innerHTML = 
     `
     <a href="https://www.grubhub.com/restaurant/oasis-vegan-veggie-parlor-340-washington-st-dorchester/539264" target="_blank">
@@ -376,12 +384,18 @@ const menuFunction =() => {
     </a>
     <a href="https://www.yelp.com/biz/oasis-vegan-veggie-parlor-dorchester" target="_blank">
     <img src="./images/yelp.png" alt="yelp Logo" class="grub">
-    </a>`
-    homeContent.appendChild(stopBy)
+    </a>
+    `
+    footer.appendChild(stopBy)
 
     document.getElementById("homeButton").addEventListener("click", function(e) {
         removeAllChildNodes(home)
         homeFunction();
+    })
+    
+    document.getElementById("menuButton").addEventListener("click", function(e) {
+        removeAllChildNodes(home)
+        menuFunction();
     })
     
     document.getElementById("contactButton").addEventListener("click", function(e) {
@@ -393,6 +407,7 @@ const menuFunction =() => {
         removeAllChildNodes(home)
         galleryFunction();
     })
+
 }
 
 export default menuFunction

@@ -34,6 +34,9 @@ addPic("./images/sausage.jpg", "Photo of Sausage and Cauliflower", "Vegan Sausag
 
 
 const galleryFunction = () => {
+    window.scrollTo(0, 0);
+
+
     let home = document.querySelector("#content");
     let nav = document.createElement("div");
     nav.classList.add("topnav");
@@ -69,17 +72,17 @@ const galleryFunction = () => {
     homeContent.id = "home"
     menu.appendChild(homeContent);
 
-    let link = document.createElement("a");
-    // web address
-    link.onclick = () => {
-        removeAllChildNodes(home)
-        homeFunction()
-    }
-    homeContent.appendChild(link)
-    let logo = document.createElement("img");
-    logo.classList.add("logo")
-    logo.src = "./images/logo.jpg"
-    link.appendChild(logo)
+    // let link = document.createElement("a");
+    // // web address
+    // link.onclick = () => {
+    //     removeAllChildNodes(home)
+    //     homeFunction()
+    // }
+    // homeContent.appendChild(link)
+    // let logo = document.createElement("img");
+    // logo.classList.add("logo")
+    // logo.src = "./images/logo.jpg"
+    // link.appendChild(logo)
 
     for (let i = 0; i < 2; i++) {
         let breaker = document.createElement("br");
@@ -104,11 +107,14 @@ const galleryFunction = () => {
         gridContainer.appendChild(p1)
     }
 
+    let footer = document.createElement("div");
+    footer.classList.add("footer");
+    home.appendChild(footer)
+
     let stopBy = document.createElement("p");
-    stopBy.classList.add("footer")
+    stopBy.classList.add("social")
     stopBy.innerHTML = 
     `
-    <br>
     <a href="https://www.grubhub.com/restaurant/oasis-vegan-veggie-parlor-340-washington-st-dorchester/539264" target="_blank">
     <img src="./images/grub.png" alt="Grubhub Logo" class="grub">
     </a>
@@ -123,7 +129,7 @@ const galleryFunction = () => {
     </a>
     `
 
-    homeContent.appendChild(stopBy)
+    footer.appendChild(stopBy)
 
     document.getElementById("homeButton").addEventListener("click", function(e) {
         removeAllChildNodes(home)

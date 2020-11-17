@@ -7,6 +7,8 @@ import galleryFunction from './galleryFunction';
 let space = '&#8287;'
 
 const contactFunction = () => {
+    window.scrollTo(0, 0);
+
     let home = document.querySelector("#content");
     let nav = document.createElement("div");
     nav.classList.add("topnav");
@@ -42,23 +44,14 @@ const contactFunction = () => {
     homeContent.id = "home"
     menu.appendChild(homeContent);
 
-    let link = document.createElement("a");
-    // web address
-    link.onclick = () => {
-        removeAllChildNodes(home)
-        homeFunction()
-    }
-    homeContent.appendChild(link)
-    let logo = document.createElement("img");
-    logo.classList.add("logo")
-    logo.src = "./images/logo.jpg"
-    link.appendChild(logo)
+
+
 
     let p1 = document.createElement("p");
     p1.innerHTML = "340 Washington St, Boston, MA 02121"
 
     let p2 = document.createElement("p");
-    p2.innerHTML = "(617) 237-9033"
+    p2.innerHTML = "(617) 237-9033<br>"
 
     let br1 = document.createElement("br");
     let br2 = document.createElement("br");
@@ -79,10 +72,57 @@ const contactFunction = () => {
     </table>
     `
 
-    let p3 = document.createElement("p");
-    p3.innerHTML = 
+    let form = document.createElement("table");
+    form.classList.add("form")
+    form.innerHTML = `
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdcN_GoYSEVYa0y1iN_QL7GaOFV7PldUCRzh8sQlKGoL2v9vg/viewform?embedded=true" width="640" height="670" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     `
-    Please stop by and visit us soon or visit us on social media <br><br>
+    let contactContainer = document.createElement("div");
+    homeContent.appendChild(contactContainer)
+
+    contactContainer.appendChild(hours)
+    contactContainer.appendChild(p1)
+    contactContainer.appendChild(p2)
+    hours.appendChild(hoursTable)
+
+    homeContent.appendChild(br2)
+
+    let map = document.createElement("div");
+    map.id = "map";
+    homeContent.appendChild(map)
+
+    homeContent.appendChild(form)
+
+
+      // Initialize and add the map
+    function initMap() {
+        // The location of Uluru
+        const uluru = { lat: 42.299525, lng: -71.073629 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 17,
+            center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+            position: uluru,
+            map: map,
+        });
+    }
+
+    initMap()
+
+
+
+
+    let footer = document.createElement("div");
+    footer.classList.add("footer");
+    home.appendChild(footer)
+
+    let stopBy = document.createElement("p");
+    stopBy.classList.add("social")
+    stopBy.innerHTML = 
+    `
     <a href="https://www.grubhub.com/restaurant/oasis-vegan-veggie-parlor-340-washington-st-dorchester/539264" target="_blank">
     <img src="./images/grub.png" alt="Grubhub Logo" class="grub">
     </a>
@@ -94,26 +134,23 @@ const contactFunction = () => {
     </a>
     <a href="https://www.yelp.com/biz/oasis-vegan-veggie-parlor-dorchester" target="_blank">
     <img src="./images/yelp.png" alt="yelp Logo" class="grub">
-    </a>`
-
-    homeContent.appendChild(p1)
-    homeContent.appendChild(p2)
-    homeContent.appendChild(br1)
-    homeContent.appendChild(hours)
-    hours.appendChild(hoursTable)
-    homeContent.appendChild(br2)
-
-
-    homeContent.appendChild(p3)
+    </a>
+    `
+    footer.appendChild(stopBy)
 
     document.getElementById("homeButton").addEventListener("click", function(e) {
-        removeAllChildNodes(home);
+        removeAllChildNodes(home)
         homeFunction();
     })
     
     document.getElementById("menuButton").addEventListener("click", function(e) {
-        removeAllChildNodes(home);
+        removeAllChildNodes(home)
         menuFunction();
+    })
+    
+    document.getElementById("contactButton").addEventListener("click", function(e) {
+        removeAllChildNodes(home)
+        contactFunction();
     })
 
     document.getElementById("galleryButton").addEventListener("click", function(e) {
