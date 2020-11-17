@@ -34,9 +34,8 @@ html {
 body {
     height: 100%;
     width: 100%;
-    font-family: 'Varela Round', sans-serif;
-    /* background-size: cover; */
-    background: linear-gradient(.5turn, #ffb98a,  #b0ce86,  #ffb98a);
+    font-family: 'Playfair Display', serif;
+
 }
 
 #content {
@@ -45,58 +44,61 @@ body {
 }
 
 #menu {
-    padding: 22px;
-    height: 100%;
     width: 100%;
-    background: rgba(72,140,81);
+    height: 100vh;
     overflow: scroll;
+    background-color: #d0d0d0;
+
 }
 
 #home {
-    padding-top: 80px;
     text-align: center;
     width: 100%;
-    height: fit-content;
-    font-size: 2.2rem;
-    min-width: 500px;
+    height: 100vh;
+    font-size: 1.9rem;
+    background-color: #d0d0d0;
 }
 
-.topnav {
-    background: #ffb98a;
-    padding-left: 20px;
-    padding-top: 2vh;
+.topnavHome {
+    background: white;
     position: fixed;
     z-index: 1000;
     top: 0px;
     width: 100%;
-    border-bottom: 5px solid black;
-
+    height: 65px;
 }
 
-.topnav button {
-    border-radius: 10px 10px 0 0;
-    float: left;
-    color: #b0ce86;
+.topnav {
+    background: white;
+    position: fixed;
+    z-index: 1000;
+    top: 0px;
+    width: 100%;
+    height: 65px;
+    border-bottom: 3px solid black;
+}
+
+button {
+    float: center;
+    color: #488c51;
     text-align: center;
-    padding: 10px;
-    padding-bottom: 5px;
+    border: none;
     text-decoration: none;
-    font-size: 2rem;
-    background-color: black;
+    font-size: 1.8rem;
     outline: none;
-    border: 3px solid black;
-    margin: 0%;
-    
+    margin: 12px;
+    background: white;
+
 }
 
-.topnav button:hover {
+button:hover {
     color: #db5f3d;
     cursor: pointer;
+
 }
 
-.topnav button.active {
+button.active {
     background-color: #fffdfe;
-    border-bottom: 3px solid #fffdfe;
     color:#db5f3d;
 }
 
@@ -104,54 +106,111 @@ h1 {
     color:#fffdfe;
 }
 
-p {
-    color: #fffdfe;
-    margin: 15px 10px 10px 10px;
+.copy {
+    color: black;
+    background: #d0d0d0;
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    font-size: 2.5rem;
+}
+
+.last {
+    padding-bottom: 30px;
+    background: #d0d0d0;
+
 }
 
 a {
-    color: rgba(72,140,81);
+    color: #ffb98a;
 }
 
 .logoHome {
-    border-radius: 10%;
-    width: 10%;
+    height: 100vh;
     min-width: 225px;
-    transition: .5s;
-    border: 3.5px solid black;
-    box-shadow: 2px 1px rgb(1, 96, 1);
+    padding: 80px;
+    padding-right: 10%;
 }
 
-.logo {
-    border-radius: 10%;
-    width: 10%;
-    min-width: 225px;
-    transition: .5s;
-    border: 3.5px solid black;
-    box-shadow: 2px 1px rgb(1, 96, 1);
+.logoDiv {
+    background-color: white;
 }
 
-.logo:hover {
-    box-shadow: 3px 2px rgb(1, 96, 1);
-    transform: scale(1.01);
-    cursor: pointer;
+.boxContainer {
+    background-color: #488c51;
+    color: white;
+    height: fit-content;
+    width: 50%;
+    float: right;
+    bottom: 0;
+    padding: 35px;
+    overflow-y: auto;
+
 }
+
+.leftBox {  
+    color: white;
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: #488c51;
+    bottom: 0;
+}
+.rightBox {
+    background-color: #488c51;
+    color: white;
+    height: fit-content;
+    width: 50%;
+    float: right;
+    bottom: 0;
+    padding: 35px;
+    border-left: 4px solid black;
+    overflow-y: auto;
+}
+
+.rightBox p {
+    font-size: 15px;
+}
+
+.featuredFood {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: relative;
+    width: 100%;
+}
+
+.featuredFood2 {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    position: relative;
+    width: 100%;
+    margin-bottom: -20px;
+}
+
+
 
 
 .grub {
     border-radius: 20%; 
-    margin: 12px;
-    margin-top: 20px;
-    min-width: 75px; 
-    width: 2vw; 
-    border: none;
-    box-shadow: 1px 2px rgb(1, 96, 1);
-    opacity: 0.88;
+    width: 2.8rem; 
+    border: 3px solid black;
+    margin-right: 10px;
+    margin-left: 13px;
 }
+
 .grub:hover {
-    box-shadow: 3px 3px rgb(1, 96, 1);
     transform: scale(1.05);
     opacity: 1;
+}
+
+.social {
+    display: flex;
+    justify-content: left;
+    padding: 0;
+}
+
+.contactContainer {
+    height: fit-content;
 }
 
 .hours {
@@ -162,15 +221,33 @@ a {
     background-color: #fffdfe;
     height: fit-content;
     margin: auto;
-    margin-top: -30px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+
     text-align:left;
     font-size: 2rem; 
     padding: 25px;
-    border: 5px solid black;
+    border: 3px solid black;
     opacity: 0.97;
-    box-shadow: 3px 4px rgb(1, 96, 1);
     color: black;
-    border-radius: 10px;
+}
+
+.form {
+    width: fit-content;
+    line-height: 1.1;
+    display: flex;
+    justify-content: center;
+    background-color: #fffdfe;
+    height: fit-content;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    text-align:left;
+    font-size: 2rem; 
+    padding: 25px;
+    border: 3px solid black;
+    opacity: 0.97;
+    color: black;
 }
 
 
@@ -190,12 +267,12 @@ th {
     height: fit-content;
     margin: 18px;
     text-align:left;
-    font-size: 22px; 
+    font-size: 25px; 
     padding: 15px;
     border: 2px solid black;
     min-width: 381px;
-    box-shadow: 2px 3px rgb(1, 96, 1);
-    border-radius: 10px;
+    box-shadow: 2px 3px rgb(52, 52, 52);
+    border-radius: 5px;
 }
 
 .flex-container-options {
@@ -210,12 +287,17 @@ th {
     height: fit-content;
     margin: 10px;
     text-align:left;
-    font-size: 20px; 
+    font-size: 18px; 
     padding: 15px;
     border: 2px solid black;
     opacity: 0.97;
-    box-shadow: 2px 3px rgb(1, 96, 1);
-    border-radius: 10px;
+    box-shadow: 2px 3px rgb(52, 52, 52);
+    border-radius: 5px;
+}
+
+.card-options b {
+    font-size: 24px; 
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -249,92 +331,38 @@ th {
     }
 
     #home {
-        padding-top: 120px;
         text-align: center;
         width: 100%;
-        height: fit-content;
+        height: 100%;
         font-size: 3.9rem;
     }
 
 
     
     .logoHome {
-        border-radius: 10%;
-        width: 55%;
-        min-width: 225px;
-        transition: .5s;
-        border: 3.5px solid black;
-        box-shadow: 2px 1px rgb(1, 96, 1);
-        margin-top: 60px;
-    }
-
-    .logo {
-        border-radius: 10%;
-        width: 55%;
-        min-width: 225px;
-        transition: .5s;
-        border: 3.5px solid black;
-        box-shadow: 2px 1px rgb(1, 96, 1);
-        margin-top: 60px;
-
-    }
-
-    .hours {
-        font-size: 5vw;
-        width: 80vw;
-        line-height: 1.1;
-        display: flex;
-        justify-content: center;
-        background-color: #fffdfe;
-        height: fit-content;
-        margin: auto;
-        margin-top: -30px;
-        text-align:left;
-        padding: 25px;
-        border: 5px solid black;
-        opacity: 0.97;
-        box-shadow: 4px 5px rgb(1, 96, 1);
-        color: black;
-        border-radius: 10px;
-    }
-
-    .topnav button {
-        border-radius: 10px 10px 0 0;
-        float: left;
-        color: #b0ce86;
-        text-align: center;
-        padding: 10px;
-        padding-bottom: 5px;
-        text-decoration: none;
-        font-size: 2rem;
-        background-color: black;
-        outline: none;
-        border: 3px solid black;
-        margin: 0%;
-        width: 24%;
-        min-width: 90px;
-        
+        height: 100vw;
+        padding-top: 18%;
+        padding-right: 10%;
     }
 }
 
 
 .titlecard {
-    background-color: #d6faa3;
-    color: #ba4f32;
+    background-color: #ffffff;
     width: fit-content;
     max-width: 400px;
     height: fit-content;
     margin-left: 6vw;
     text-align: center;
     padding: 10px;
-    padding-top: 13px;
+    padding-top: 5px;
     font-size: 35px; 
     justify-content:center;
     border: 3.5px solid black;
     min-width: 150px;
     min-height: 10px;
     opacity: 1;
-    box-shadow: 2px 3px rgb(1, 96, 1);
+    box-shadow: 2px 3px rgb(52, 52, 52);
     position: relative;
     bottom: 42px;
 }
@@ -356,14 +384,11 @@ th {
 
 .image {
     display: block;
-    width: 40vw;
-    min-width: 200px;
-    height: 100%;
-    border: 5px solid black;
-    box-shadow: 3px 4px rgb(1, 96, 1);
+    object-fit: cover;
+    min-width: 150px;
+    border: 3px solid black;
     display: flex;
     justify-content: center;
-    border-radius: 2%;
 }
 
 .overlay {
@@ -401,7 +426,7 @@ th {
 
 .grid-container {
     display: inline-grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     padding: auto;
     align-content: center;
     justify-content: center;
@@ -413,6 +438,30 @@ th {
 .grid-item {
     padding: 20px;
     font-size: 30px;
+    width: 30vw;
+    height: 30vw;
+}
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 17px;
+    background-color: rgb(133, 131, 131);
+    color: white;
+    text-align: center;
+    border-top: 3px solid black;
+}
+
+#map {
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+
+    height: 600px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
 }
 
 
