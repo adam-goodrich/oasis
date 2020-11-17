@@ -192,10 +192,9 @@ a {
 
 .grub {
     border-radius: 20%; 
-    width: 2.8rem; 
-    border: 3px solid black;
-    margin-right: 10px;
-    margin-left: 13px;
+    width: 3rem; 
+    border: 2px solid black;
+    margin-left: 15px;
 }
 
 .grub:hover {
@@ -203,11 +202,7 @@ a {
     opacity: 1;
 }
 
-.social {
-    display: flex;
-    justify-content: left;
-    padding: 0;
-}
+
 
 .contactContainer {
     height: fit-content;
@@ -298,52 +293,6 @@ th {
 .card-options b {
     font-size: 24px; 
 
-}
-
-@media only screen and (max-width: 1000px) {
-
-    .card-options {
-        background-color: #fffdfe;
-        width: 75%;
-        height: fit-content;
-        margin: 10px;
-        text-align:left;
-        font-size: 25px; 
-        padding: 15px;
-        border: 2px solid black;
-        opacity: 0.97;
-        box-shadow: 2px 3px rgb(1, 96, 1);
-        border-radius: 10px;
-    }
-
-    .card {
-        background-color: #f2f2f2;
-        width: 80%;
-        height: fit-content;
-        margin: 18px;
-        text-align:left;
-        font-size: 25px; 
-        padding: 15px;
-        border: 2px solid black;
-        min-width: 381px;
-        box-shadow: 2px 3px rgb(1, 96, 1);
-        border-radius: 10px;
-    }
-
-    #home {
-        text-align: center;
-        width: 100%;
-        height: 100%;
-        font-size: 3.9rem;
-    }
-
-
-    
-    .logoHome {
-        height: 100vw;
-        padding-top: 18%;
-        padding-right: 10%;
-    }
 }
 
 
@@ -447,17 +396,35 @@ th {
     left: 0;
     bottom: 0;
     width: 100%;
+    height: 80px;
     padding: 17px;
     background-color: rgb(133, 131, 131);
     color: white;
+    display: flex;
     text-align: center;
+    align-items: center;
     border-top: 3px solid black;
+}
+
+.social {
+    width: 50%;
+    display: flex;
+    float: left;
+}
+
+.copyright {
+    width: 30%;
+    float: right;
+    right: 0;
+    color: white;
+    font-size: 20px;
+    align-items: right;
+    margin-left: 180px;
 }
 
 #map {
     border-top: 5px solid black;
     border-bottom: 5px solid black;
-
     height: 600px;
     /* The height is 400 pixels */
     width: 100%;
@@ -465,3 +432,112 @@ th {
 }
 
 
+@media only screen and (max-width: 1025px) {
+
+    .topnavHome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+    }
+    
+    .topnav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        width: 100%;
+        height: fit-content;
+        border-bottom: 3px solid black;
+    }
+    
+
+    button {
+        float: center;
+        color: #488c51;
+        text-align: center;
+        border: none;
+        text-decoration: none;
+        font-size: 5vw;
+        outline: none;
+        margin: 20px;
+        background: white;
+    
+    }
+
+    .card-options {
+        background-color: #fffdfe;
+        width: 75%;
+        height: fit-content;
+        margin: 10px;
+        text-align:left;
+        font-size: 25px; 
+        padding: 15px;
+        border: 2px solid black;
+        opacity: 0.97;
+        box-shadow: 2px 3px rgb(89, 89, 89);
+        border-radius: 10px;
+    }
+
+    .card {
+        background-color: #f2f2f2;
+        width: 90%;
+        height: fit-content;
+        margin: 18px;
+        text-align:left;
+        font-size: 30px; 
+        padding: 15px;
+        border: 2px solid black;
+        min-width: 381px;
+        box-shadow: 2px 3px rgb(89, 89, 89);
+        border-radius: 10px;
+    }
+
+    #home {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 3.9rem;
+    }
+
+
+    
+    .logoHome {
+        height: 100vw;
+        padding-top: 18%;
+        padding-right: 17%;
+    }
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 120px;
+        padding: 17px;
+        background-color: rgb(133, 131, 131);
+        color: white;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        border-top: 3px solid black;
+    }
+
+    .copyright {
+        width: 30%;
+        float: right;
+        right: 0;
+        color: white;
+        margin-left: 150px;
+        font-size: 2.5vw;
+    }
+}
