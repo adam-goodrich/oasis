@@ -15,19 +15,25 @@ const homeFunction = () => {
 
     let homeButton = document.createElement("button");
     homeButton.id = "homeButton"
-    homeButton.classList.add("active");
+    homeButton.classList.add("buttonHomeActive");
     homeButton.innerHTML = "Home"
 
     let menuButton = document.createElement("button");
     menuButton.id = "menuButton"
+    menuButton.classList.add("buttonHome");
+
     menuButton.innerHTML = "Menu"
 
     let contactButton = document.createElement("button");
     contactButton.id = "contactButton"
+    contactButton.classList.add("buttonHome");
+
     contactButton.innerHTML = "Contact"
 
     let galleryButton = document.createElement("button");
     galleryButton.id = "galleryButton"
+    galleryButton.classList.add("buttonHome");
+
     galleryButton.innerHTML = "Gallery"
 
     nav.appendChild(homeButton);
