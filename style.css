@@ -47,7 +47,7 @@ body {
     width: 100%;
     height: 100vh;
     overflow: scroll;
-    background-color: #d0d0d0;
+    background-color: #f0f0f0;
 
 }
 
@@ -56,7 +56,7 @@ body {
     width: 100%;
     height: 100vh;
     font-size: 1.9rem;
-    background-color: #d0d0d0;
+    background-color: #f0f0f0;
 }
 
 .topnavHome {
@@ -69,16 +69,15 @@ body {
 }
 
 .topnav {
-    background: white;
+    background: #f0f0f0;
     position: fixed;
     z-index: 1000;
     top: 0px;
     width: 100%;
     height: 65px;
-    border-bottom: 3px solid black;
 }
 
-button {
+.buttonHome {
     float: center;
     color: #488c51;
     text-align: center;
@@ -91,16 +90,36 @@ button {
 
 }
 
+button {
+    float: center;
+    color: #488c51;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    font-size: 1.8rem;
+    outline: none;
+    margin: 12px;
+    background: #f0f0f0;
+
+}
+
 button:hover {
     color: #db5f3d;
     cursor: pointer;
 
 }
 
-button.active {
-    background-color: #fffdfe;
+.buttonHomeActive {
+    background-color:white;
     color:#db5f3d;
 }
+
+button.active {
+    background-color: #f0f0f0;
+    color:#db5f3d;
+}
+
+
 
 h1 {
     color:#fffdfe;
@@ -108,7 +127,7 @@ h1 {
 
 .copy {
     color: black;
-    background: #d0d0d0;
+    background: #f0f0f0;
     padding: 15px;
     width: 80%;
     margin: auto;
@@ -117,7 +136,7 @@ h1 {
 
 .last {
     padding-bottom: 30px;
-    background: #d0d0d0;
+    background: #f0f0f0;
 
 }
 
@@ -213,7 +232,7 @@ a {
     line-height: 1.1;
     display: flex;
     justify-content: center;
-    background-color: #fffdfe;
+    background-color: #f0f0f0;
     height: fit-content;
     margin: auto;
     margin-top: 100px;
@@ -222,7 +241,6 @@ a {
     text-align:left;
     font-size: 2rem; 
     padding: 25px;
-    border: 3px solid black;
     opacity: 0.97;
     color: black;
 }
@@ -257,7 +275,7 @@ th {
 }
 
 .card {
-    background-color: #f2f2f2;
+    background-color: white;
     width: 75%;
     height: fit-content;
     margin: 18px;
@@ -277,7 +295,7 @@ th {
 }
 
 .card-options {
-    background-color: #fffdfe;
+    background-color: white;
     width: 50%;
     height: fit-content;
     margin: 10px;
@@ -416,7 +434,7 @@ th {
     width: 30%;
     float: right;
     right: 0;
-    color: white;
+    color: #f0f0f0;
     font-size: 20px;
     align-items: right;
     margin-left: 180px;
