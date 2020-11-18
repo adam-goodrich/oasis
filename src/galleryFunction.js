@@ -18,10 +18,12 @@ function addPic(src, alt, text) {
     galleryList.push(newItem);
 }
 
+addPic("./images/home.jpg", "Photo of store front", "Our Home")
 addPic("./images/pancake.jpg", "photo of pancakes", "OVVP Pancakes")
 addPic("./images/chopsuey.jpg", "Photo of Vegan Chop Suey", "Vegan Chop Suey")
 addPic("./images/mango.jpg", "Photo of Mango Smoothie", "Mango Moon Smoothie")
 addPic("./images/milk.jpg", "Photo of Golden Milk Shake", "Golden Milk Shake")
+addPic("./images/rice.jpg", "Photo of rice bowl", "OVVP Rice Bowl")
 addPic("./images/buffet.jpg", "Photo of all our sides and stews", "Various Sides and Stews")
 addPic("./images/smoothies.jpg", "Photo of all our Smoothies", "Various Smoothie Options")
 addPic("./images/reg-box.jpg", "Photo of Medium Plate", "Medium Plate Meal")
@@ -30,7 +32,13 @@ addPic("./images/pot.jpg", "Photo of African Pot Bowl", "African Pot Bowl")
 addPic("./images/everything.jpg", "Photo of Oasis Everything Plate", " Oasis Everything Plate")
 addPic("./images/sub.jpg", "Photo of a Vegan Sub", "OVVP Soy Crumble Sub")
 addPic("./images/sausage.jpg", "Photo of Sausage and Cauliflower", "Vegan Sausage and Cauliflower")
-
+addPic("./images/large-meal.jpg", "Photo of large-meal", "large Meal Combo")
+addPic("./images/small-plate.jpg", "Photo of small-plate", "Small Meal Combo")
+addPic("./images/korma.jpg", "Photo of Veggie Korma Bowl", "Veggie Korma Bowl")
+addPic("./images/burrito-bowl.jpg", "Photo of burrito-bowl", "Vegan Burrito Bowl")
+addPic("./images/everything-plate.jpg", "Photo of everything-plate", "The Oasis Everything Plate")
+addPic("./images/oasis-burrito.jpg", "Photo of oasis-burrito", "Oasis Burrito")
+addPic("./images/medium-plate.jpg", "Photo of medium-plate", "Medium Meal")
 
 
 const galleryFunction = () => {

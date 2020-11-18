@@ -54,8 +54,13 @@ const homeFunction = () => {
     homeContent.appendChild(logoDiv)
     let logo = document.createElement("img");
     logo.classList.add("logoHome")
-    logo.src = "./images/logo.jpg"
+    logo.src = "./images/logo.png"
     logoDiv.appendChild(logo)
+
+    let address = document.createElement("p");
+    address.classList.add("address")
+    address.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033"
+    logoDiv.appendChild(address)
 
     let boxContainer = document.createElement("div");
     homeContent.appendChild(boxContainer)
@@ -65,22 +70,26 @@ const homeFunction = () => {
     featuredFood.src = "./images/buffet.jpg"
     boxContainer.appendChild(featuredFood)
 
-    let address = document.createElement("p");
-    address.classList.add("copy")
-    address.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033"
-    boxContainer.appendChild(address)
+    // let address = document.createElement("p");
+    // address.classList.add("address")
+    // address.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033"
+    // boxContainer.appendChild(address)
 
     let p1 = document.createElement("p");
     p1.classList.add("copy")
-    p1.innerHTML = "Serving the community in the four corners neighborhood of Dorchester."
+    p1.innerHTML = "Serving the community since 2017 in the four corners neighborhood of Dorchester."
     boxContainer.appendChild(p1)
 
     let p2 = document.createElement("p");
     p2.classList.add("copy")
-    p2.classList.add("last")
-
-    p2.innerHTML = "Come by and enjoy one of our fresh dishes or one of our juices, smoothies, or shakes. Visit our menu section to see our combo meals, wraps, and grain bowl choices."
+    p2.innerHTML = "The consciousness is expanded on health — health and wellness. It’s up to us to take care of our bodies, mind, and spirit. This is our focus: to help with the community and ourselves as well."
     boxContainer.appendChild(p2)
+
+    let p3 = document.createElement("p");
+    p3.classList.add("copy")
+    p3.classList.add("last")
+    p3.innerHTML = "Come by and enjoy one of our fresh dishes or one of our juices, smoothies, or shakes. Visit our menu section to see our combo meals, wraps, and grain bowl choices."
+    boxContainer.appendChild(p3)
 
     let featuredFood2 = document.createElement("img");
     featuredFood2.classList.add("featuredFood2");

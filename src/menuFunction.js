@@ -106,14 +106,14 @@ addFoodToMenu("grain", "Quinoa Veggie Bowl", "$14.45", "Oasis savory herb sauce 
 addFoodToMenu("grain", "Veggie Rice Bowl", "$14.45", "Fresh veggies seasoned and stirred -not fried- brown rice (spicy and tofu options available).")
 addFoodToMenu("grain", "Oasis Vegan Burrito Bowl", "$14.45", "Seasoned brown rice and hot veggies smothered with vegan cheese and miser wat.")
 addFoodToMenu("grain", "African Pot Bowl", "$14.45", "Our spicy Oasis African couscous with fresh kale along side an array of fresh veggies. (Contains Gluten)")
-addFoodToMenu("grain", "Veggie Korma Bowl", "$14.45", "taste of India in a rich savory coconut curry sauce drenched over an array of veggie delight and brown rice (spicy optional).")
+addFoodToMenu("grain", "Veggie Korma Bowl", "$14.45", "Taste of India in a rich savory coconut curry sauce drenched over an array of veggie delight and brown rice (spicy optional).")
 addFoodToMenu("grain", "The Oasis Bowl", "$14.45", "Our favorite grain of the day and veggie medley seasoned to perfection with love!")
 
 // WRAPS
 addFoodToMenu("wrap", "Oasis Vegan Burritto", "$12.84", "Melted vegan cheese, seasoned brown rice, fresh veggies, miser wat, and Oasis dressings.")
 addFoodToMenu("wrap", "The Oshun Wrap", "$12.84", "Melted vegan cheese over kale and curry chickpea stew.")
-addFoodToMenu("wrap", "The Shango Wrap", "$12.84", "Miser wat (Ethiopian high protein lentils), spicy veggies, and vegan cheese (optional).")
-addFoodToMenu("wrap", "Oasis Mushroom and Cheese Wrap", "$13.12", "Savory seasoned mushrooms, red onions, tomatoes, red bell peppers, grilled with melted vegan cheese.")
+addFoodToMenu("wrap", "The Shango Wrap", "$12.84", "Miser wat, spicy veggies, and vegan cheese (cheese optional).")
+addFoodToMenu("wrap", "Oasis Mushroom and Cheese Wrap", "$13.12", "Savory seasoned mushrooms, red onions, tomatoes, red bell peppers, all grilled with melted vegan cheese.")
 
 // JUICES
 addFoodToMenu("juice", "Mango Moon", "$6.96", "Mangos, turmeric, almond milk, cinnamon, agave, Spice")
@@ -127,7 +127,6 @@ addFoodToMenu("side", "The Oasis Mac and Cheese Pie", "$5.89", "Seasoned pasta a
 
 const menuFunction =() => {
     window.scrollTo(0, 0);
-
 
     let home = document.querySelector("#content");
     let nav = document.createElement("div");

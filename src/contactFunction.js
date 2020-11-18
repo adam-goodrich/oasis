@@ -91,6 +91,17 @@ const contactFunction = () => {
     map.id = "map";
     homeContent.appendChild(map)
 
+    let delivery = document.createElement("div");
+    delivery.innerHTML = `
+    <br>
+    <p class="delivery">We deliver with Grubhub</p>
+    <br>
+    <a href="https://www.grubhub.com/restaurant/oasis-vegan-veggie-parlor-340-washington-st-dorchester/539264" target="_blank">
+    <img src="./images/grub.png" alt="Grubhub Logo" class="grub-contact">
+    </a>`
+
+    homeContent.appendChild(delivery)
+
     homeContent.appendChild(form)
 
     homeContent.appendChild(br1)
