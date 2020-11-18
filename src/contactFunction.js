@@ -56,22 +56,6 @@ const contactFunction = () => {
     let br1 = document.createElement("br");
     let br2 = document.createElement("br");
 
-    let hours = document.createElement("p");
-
-    let hoursTable = document.createElement("table");
-    hoursTable.classList.add("hours")
-    hoursTable.innerHTML = `
-    <table>
-        <tr><th>Monday  -${space}</th><td>Closed</td></tr>
-        <tr><th>Tuesday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Wednesday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Thursday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Friday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Saturday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Sunday  -${space}</th><td>Closed</td></tr>
-    </table>
-    `
-
     let form = document.createElement("table");
     form.classList.add("form")
     form.innerHTML = `
@@ -81,9 +65,7 @@ const contactFunction = () => {
     contactContainer.classList.add("contactContainer")
     homeContent.appendChild(contactContainer)
 
-    contactContainer.appendChild(hours)
     contactContainer.appendChild(p1)
-    hours.appendChild(hoursTable)
 
     homeContent.appendChild(br2)
 

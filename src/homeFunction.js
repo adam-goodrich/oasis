@@ -3,6 +3,9 @@ import menuFunction from './menuFunction'
 import contactFunction from './contactFunction'
 import galleryFunction from './galleryFunction';
 
+let space = '&#8287;'
+
+
 const homeFunction = () => {
 
     window.scrollTo(0, 0);
@@ -58,25 +61,73 @@ const homeFunction = () => {
     logoDiv.appendChild(logo)
 
     let address = document.createElement("p");
-    address.classList.add("address")
-    address.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033"
+    address.classList.add("addressFront")
+    address.innerHTML = "340 Washington St, Boston, MA 02121"
     logoDiv.appendChild(address)
 
     let boxContainer = document.createElement("div");
     homeContent.appendChild(boxContainer)
 
-    let featuredFood = document.createElement("img");
+    let featuredFood = document.createElement("div");
     featuredFood.classList.add("featuredFood");
-    featuredFood.src = "./images/buffet.jpg"
+    // featuredFood.src = "./images/buffet.jpg"
     boxContainer.appendChild(featuredFood)
+
+    let delivery = document.createElement("div");
+    delivery.classList.add("callToAction")
+    delivery.innerHTML = `
+    <br>
+    <br>
+    <p>Please call <a href="tel:6172379033">(617) 237-9033</a> to place an order</p>
+    <br>
+    <p>Click below to order delivery with Grubhub</p>
+    <br>
+    <a href="https://www.grubhub.com/restaurant/oasis-vegan-veggie-parlor-340-washington-st-dorchester/539264" target="_blank">
+    <img src="./images/grub.png" alt="Grubhub Logo" class="grub-contact"></a>
+    <br>
+
+    <br>
+    `
+
+    boxContainer.appendChild(delivery)
+
+    let hours = document.createElement("p");
+    let hoursTable = document.createElement("table");
+    hoursTable.classList.add("hours")
+    hoursTable.innerHTML = `
+    <table>
+        <tr><th>Monday  -${space}</th><td>Closed</td></tr>
+        <tr><th>Tuesday  -${space}</th><td>8am - 8pm</td></tr>
+        <tr><th>Wednesday  -${space}</th><td>8am - 8pm</td></tr>
+        <tr><th>Thursday  -${space}</th><td>8am - 8pm</td></tr>
+        <tr><th>Friday  -${space}</th><td>8am - 8pm</td></tr>
+        <tr><th>Saturday  -${space}</th><td>8am - 8pm</td></tr>
+        <tr><th>Sunday  -${space}</th><td>Closed</td></tr>
+    </table>
+    `
+
+
+    boxContainer.appendChild(hours)
+    hours.appendChild(hoursTable)
 
     // let address = document.createElement("p");
     // address.classList.add("address")
     // address.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033"
     // boxContainer.appendChild(address)
 
+
+
+
+
+
+    let featuredFood2 = document.createElement("div");
+    featuredFood2.classList.add("featuredFood2");
+    // featuredFood2.src = "./images/smoothies.jpg"
+    boxContainer.appendChild(featuredFood2)
+
     let p1 = document.createElement("p");
     p1.classList.add("copy")
+    p1.classList.add("first")
     p1.innerHTML = "Serving the community since 2017 in the four corners neighborhood of Dorchester."
     boxContainer.appendChild(p1)
 
@@ -90,11 +141,6 @@ const homeFunction = () => {
     p3.classList.add("last")
     p3.innerHTML = "Come by and enjoy one of our fresh dishes or one of our juices, smoothies, or shakes. Visit our menu section to see our combo meals, wraps, and grain bowl choices."
     boxContainer.appendChild(p3)
-
-    let featuredFood2 = document.createElement("img");
-    featuredFood2.classList.add("featuredFood2");
-    featuredFood2.src = "./images/smoothies.jpg"
-    boxContainer.appendChild(featuredFood2)
 
     let footer = document.createElement("div");
     footer.classList.add("footer");
