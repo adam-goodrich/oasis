@@ -116,7 +116,7 @@ const galleryFunction = () => {
 
     let footer = document.createElement("div");
     footer.classList.add("footer");
-    home.appendChild(footer)
+    homeContent.appendChild(footer)
 
     let stopBy = document.createElement("p");
     stopBy.classList.add("social")

@@ -49,7 +49,7 @@ const contactFunction = () => {
 
     let p1 = document.createElement("p");
     p1.classList.add("address")
-    p1.innerHTML = "340 Washington St, Boston, MA 02121<br>(617) 237-9033<br>"
+    p1.innerHTML = `340 Washington St, Boston, MA 02121<br><a href="tel:6172379033">(617) 237-9033</a><br>`
 
 
 
@@ -113,7 +113,7 @@ const contactFunction = () => {
 
     let footer = document.createElement("div");
     footer.classList.add("footer");
-    home.appendChild(footer)
+    homeContent.appendChild(footer)
 
     let stopBy = document.createElement("p");
     stopBy.classList.add("social")

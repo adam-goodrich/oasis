@@ -287,7 +287,6 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: -20px;
 }
 
 
@@ -543,7 +542,7 @@ th {
     border: 3px solid black;
     height: 600px;
     /* The height is 400 pixels */
-    width: 50%;
+    width: 70%;
     margin: auto;
     /* The width is the width of the web page */
 }
@@ -557,7 +556,7 @@ th {
         border-bottom: 3px solid black;
         height: 500px;
         background-attachment: scroll;
-        background-position: center;
+        background-position: center !important;;
         background-repeat: no-repeat;
         background-size: cover;
     }

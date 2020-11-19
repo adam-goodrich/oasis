@@ -8,7 +8,6 @@ let space = '&#8287;'
 
 const homeFunction = () => {
 
-    window.scrollTo(0, 0);
 
 
     let home = document.querySelector("#content");
@@ -68,8 +67,11 @@ const homeFunction = () => {
     let boxContainer = document.createElement("div");
     homeContent.appendChild(boxContainer)
 
+
+
     let featuredFood = document.createElement("div");
     featuredFood.classList.add("featuredFood");
+    featuredFood.id = "featuredFood";
     // featuredFood.src = "./images/buffet.jpg"
     boxContainer.appendChild(featuredFood)
 
@@ -122,6 +124,8 @@ const homeFunction = () => {
 
     let featuredFood2 = document.createElement("div");
     featuredFood2.classList.add("featuredFood2");
+    featuredFood2.id = "featuredFood2"
+
     // featuredFood2.src = "./images/smoothies.jpg"
     boxContainer.appendChild(featuredFood2)
 
@@ -144,7 +148,7 @@ const homeFunction = () => {
 
     let footer = document.createElement("div");
     footer.classList.add("footer");
-    home.appendChild(footer)
+    boxContainer.appendChild(footer)
 
     let stopBy = document.createElement("p");
     stopBy.classList.add("social")
@@ -170,6 +174,14 @@ const homeFunction = () => {
     copyright.innerHTML = `© 2020 Oasis Vegan Veggie Parlor`
     footer.appendChild(copyright)
 
+    let image1 = document.getElementById("featuredFood")
+
+    menu.addEventListener("scroll", function() {
+        var value = menu.scrollTop 
+        console.log(value)
+        image1.style["background-position-y"] = (value * .04) +"px"
+
+    }, false)
 
     document.getElementById("homeButton").addEventListener("click", function(e) {
         removeAllChildNodes(home)
