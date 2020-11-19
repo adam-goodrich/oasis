@@ -79,18 +79,6 @@ const galleryFunction = () => {
     homeContent.id = "home"
     menu.appendChild(homeContent);
 
-    // let link = document.createElement("a");
-    // // web address
-    // link.onclick = () => {
-    //     removeAllChildNodes(home)
-    //     homeFunction()
-    // }
-    // homeContent.appendChild(link)
-    // let logo = document.createElement("img");
-    // logo.classList.add("logo")
-    // logo.src = "./images/logo.jpg"
-    // link.appendChild(logo)
-
     for (let i = 0; i < 2; i++) {
         let breaker = document.createElement("br");
         homeContent.appendChild(breaker);
@@ -100,11 +88,45 @@ const galleryFunction = () => {
     gridContainer.classList.add("grid-container");
     homeContent.appendChild(gridContainer)
 
-    for (let i = 0; i < galleryList.length; i++) {
 
+
+    for (let i = 0; i < galleryList.length; i++) {
         let p1 = document.createElement("div");
         p1.classList.add("container")
         p1.classList.add("grid-item")
+        p1.onclick = () => { 
+            homeContent.style.opacity = "0";
+            nav.style.opacity = "0";
+            dialog.showModal(); 
+
+        }
+
+        let dialog = document.createElement("dialog");
+        dialog.id = "dialog"
+        menu.appendChild(dialog)
+        let closeButton = document.createElement("button");
+        closeButton.classList.add("right");
+        closeButton.innerHTML = "X"
+        closeButton.id = "closeButton"
+
+        let imageBig = document.createElement("img")
+        imageBig.classList.add("bigImage")
+        imageBig.src = galleryList[i].src
+        
+        dialog.appendChild(imageBig)
+
+
+        dialog.appendChild(closeButton)
+        closeButton.onclick = () => {
+            homeContent.style.opacity = "1";
+            nav.style.opacity = "1";
+            dialog.close()
+        }
+
+
+
+
+
         p1.innerHTML = `
         <img src=${galleryList[i].src} alt="${galleryList[i].alt}" class="image">
         <div class="overlay">
