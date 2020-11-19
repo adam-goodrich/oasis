@@ -5,6 +5,16 @@ import contactFunction from './contactFunction'
 
 let galleryList = [];
 
+let is_chrome = false;
+
+if(typeof window.chrome != "object") {
+    // not Chrome
+} else {
+    is_chrome = true
+}
+
+console.log(is_chrome)
+
 class GalleryImage {
     constructor(src, alt, text) {
         this.src = src
@@ -94,37 +104,42 @@ const galleryFunction = () => {
         let p1 = document.createElement("div");
         p1.classList.add("container")
         p1.classList.add("grid-item")
-        p1.onclick = () => { 
-            homeContent.style.opacity = "0";
-            nav.style.opacity = "0";
-            dialog.showModal(); 
 
-        }
+        if (is_chrome) {
+            console.log("here")
+            p1.onclick = () => { 
+                homeContent.style.opacity = "0";
+                nav.style.opacity = "0";
+                dialog.showModal(); 
 
-        let dialog = document.createElement("dialog");
-        dialog.id = "dialog"
-        menu.appendChild(dialog)
-        let closeButton = document.createElement("button");
-        closeButton.classList.add("right");
-        closeButton.innerHTML = "X"
-        closeButton.id = "closeButton"
-
-        let imageBig = document.createElement("img")
-        imageBig.classList.add("bigImage")
-        imageBig.src = galleryList[i].src
+            }
         
-        dialog.appendChild(imageBig)
+
+            let dialog = document.createElement("dialog");
+            dialog.id = "dialog"
+            menu.appendChild(dialog)
+            dialog.style.zIndex = "-1000";
+            let closeButton = document.createElement("button");
+            closeButton.classList.add("right");
+            closeButton.innerHTML = "X"
+            closeButton.id = "closeButton"
+
+            let imageBig = document.createElement("img")
+            imageBig.classList.add("bigImage")
+            imageBig.src = galleryList[i].src
+            
+            dialog.appendChild(imageBig)
 
 
-        dialog.appendChild(closeButton)
-        closeButton.onclick = () => {
-            homeContent.style.opacity = "1";
-            nav.style.opacity = "1";
-            dialog.close()
+            dialog.appendChild(closeButton)
+            closeButton.onclick = () => {
+                homeContent.style.opacity = "1";
+                nav.style.opacity = "1";
+                dialog.close()
+            }
+        } else {
+            console.log("here2")
         }
-
-
-
 
 
         p1.innerHTML = `
@@ -134,6 +149,7 @@ const galleryFunction = () => {
         </div>
         `
         gridContainer.appendChild(p1)
+
     }
 
     let footer = document.createElement("div");
