@@ -89,6 +89,8 @@ body {
     background: #f4f2ef;
     position: relative;
     cursor: pointer;
+    font-family: 'Playfair Display', serif;
+
 }
 
 button {
@@ -103,6 +105,8 @@ button {
     background: #f4f2ef;
     position: relative;
     cursor: pointer;
+    font-family: 'Playfair Display', serif;
+
 }
 
 button::before {
@@ -605,6 +609,8 @@ th {
         font-size: 4.5vw;
         outline: none;
         margin: 10px;
+        font-family: 'Playfair Display', serif;
+
     
     }
 
@@ -618,6 +624,7 @@ th {
         outline: none;
         margin: 10px;
         background: #f4f2ef;
+        font-family: 'Playfair Display', serif;
 
     }
 
