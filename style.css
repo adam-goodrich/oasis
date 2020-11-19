@@ -568,7 +568,7 @@ th {
         position: relative;
         height: 500px;
         background-attachment: scroll;
-        background-position: center;
+        background-position: center !important;;
         background-repeat: no-repeat;
         background-size: cover;
         margin-bottom: -20px;
