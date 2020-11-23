@@ -266,7 +266,7 @@ a {
 }
 
 .featuredFood {
-    background-image: url("./images/buffet.jpg");
+    background-image: url("./images/buffet.webp");
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
@@ -278,7 +278,7 @@ a {
 }
 
 .featuredFood2 {
-    background-image: url("./images/smoothies.jpg");
+    background-image: url("./images/smoothies.webp");
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
@@ -631,7 +631,7 @@ dialog {
     }
 
     .featuredFood {
-        background-image: url("./images/buffet.jpg");
+        background-image: url("./images/buffet.webp");
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         height: 500px;
@@ -642,7 +642,7 @@ dialog {
     }
     
     .featuredFood2 {
-        background-image: url("./images/smoothies.jpg");
+        background-image: url("./images/smoothies.webp");
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         position: relative;
