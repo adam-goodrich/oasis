@@ -812,3 +812,221 @@ dialog {
         font-size: 2.5vw;
     }
 }
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+
+    dialog {
+        padding: 5px;
+        background-color: black;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .bigImage {
+        width: 100%;
+        height:  100%;
+        object-fit: cover;
+        border: 3px solid black;
+    }
+
+    .right {
+        position: absolute;
+        right: 1rem;
+        top: 1rem;
+        width: 2rem;
+        font-size: 1rem;
+        color: black;
+        background-color: #f4f2ef;
+        border: 3px solid black;
+        border-radius: 5px;
+    
+    }
+
+    .featuredFood {
+        background-image: url("./images/buffet.webp");
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        height: 500px;
+        background-attachment: scroll;
+        background-position: center !important;;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .featuredFood2 {
+        background-image: url("./images/smoothies.webp");
+        border-top: 3px solid black;
+        border-bottom: 3px solid black;
+        position: relative;
+        height: 500px;
+        background-attachment: scroll;
+        background-position: center !important;;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: -20px;
+    }
+
+    .topnavHome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4f2ef;
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        width: 100%;
+        height: fit-content;
+        margin: auto;
+    }
+    
+    .topnav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #f4f2ef;
+        position: fixed;
+        z-index: 1000;
+        top: 0px;
+        width: 100%;
+        height: fit-content;
+    }
+    
+
+    button {
+        float: center;
+        text-align: center;
+        border: none;
+        text-decoration: none;
+        font-size: 4.5vw;
+        outline: none;
+        margin: 10px;
+        font-family: 'Playfair Display', serif;
+
+    
+    }
+
+    .buttonHome {
+        float: center;
+        color: #488c51;
+        text-align: center;
+        border: none;
+        text-decoration: none;
+        font-size: 4.5vw;
+        outline: none;
+        margin: 10px;
+        background: #f4f2ef;
+        font-family: 'Playfair Display', serif;
+
+    }
+
+    .card-options {
+        background-color: #ffffff;
+        width: 75%;
+        height: fit-content;
+        margin: 10px;
+        text-align:left;
+        font-size: 25px; 
+        padding: 15px;
+        border: 2px solid black;
+        opacity: 0.97;
+        box-shadow: 2px 3px rgb(89, 89, 89);
+        border-radius: 10px;
+    }
+
+    .card {
+        background-color: #ffffff;
+        width: 90%;
+        height: fit-content;
+        margin: 18px;
+        text-align:left;
+        font-size: 30px; 
+        padding: 15px;
+        border: 2px solid black;
+        min-width: 381px;
+        box-shadow: 2px 3px rgb(89, 89, 89);
+        border-radius: 10px;
+    }
+
+    #home {
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        font-size: 3rem;
+    }
+
+    .address {
+        width: 80%;
+        margin: auto;
+        font-size: 3vw;
+        padding-top: 150px;
+    }
+
+    .addressFront {
+        width: 80%;
+        margin: auto;
+        font-size: 3vw;
+    }
+
+    .logoDiv {
+        justify-content: center;
+        background: #f4f2ef;
+        height: 70vw;
+    
+    }
+    
+    .logoHome {
+        height: 60vw;
+        margin-right: 5%;
+    }
+
+    .grid-container {
+        display: inline-grid;
+        grid-template-columns: 1fr 1fr;
+        padding: auto;
+        align-content: center;
+        justify-content: center;
+        margin: auto;
+        text-align: center;
+    
+    }
+    
+    .grid-item {
+        padding: 20px;
+        font-size: 30px;
+        width: 45vw;
+        height: 45vw;
+    }
+
+    .footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 120px;
+        padding: 17px;
+        background-color: #f4f2ef;
+        color: black;
+        display: flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .copyright {
+        width: 30%;
+        float: right;
+        right: 0;
+        color: black;
+        margin-left: 150px;
+        font-size: 2.5vw;
+    }
+}
