@@ -266,7 +266,7 @@ a {
 }
 
 .featuredFood {
-    background-image: url("./images/buffet.webp");
+    background-image: url("./images/buffet.png");
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
@@ -280,7 +280,7 @@ a {
 }
 
 .featuredFood2 {
-    background-image: url("./images/smoothies.webp");
+    background-image: url("./images/smoothies.png");
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
