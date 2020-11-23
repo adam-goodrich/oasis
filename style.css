@@ -275,6 +275,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size:cover;
+
 }
 
 .featuredFood2 {
@@ -287,6 +289,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size:cover;
+
 }
 
 
