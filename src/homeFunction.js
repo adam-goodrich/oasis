@@ -178,16 +178,6 @@ const homeFunction = () => {
     let image2 = document.getElementById("featuredFood2")
 
 
-    menu.addEventListener("scroll", function() {
-        var value = menu.scrollTop / 35
-
-        console.log(value)
-        image1.style["background-position-y"] = (value) +"px"
-        image2.style["background-position-y"] =  (value) + "px"
-
-
-    }, false)
-
     document.getElementById("homeButton").addEventListener("click", function(e) {
         removeAllChildNodes(home)
         homeFunction();
