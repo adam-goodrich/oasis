@@ -270,7 +270,7 @@ a {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
-    height: 500px;
+    height: 100VH;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -282,7 +282,7 @@ a {
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
-    height: 500px;
+    height: 100VH;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -594,7 +594,7 @@ dialog {
 }
 
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1050px) {
 
     dialog {
         padding: 5px;
