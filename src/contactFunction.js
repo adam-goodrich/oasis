@@ -70,7 +70,10 @@ const contactFunction = () => {
     homeContent.appendChild(br2)
 
     let map = document.createElement("div");
-    map.id = "map";
+    map.innerHTML = `
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11804.063872523297!2d-71.0736295!3d42.2995247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x87f8c231b3e9dd97!2sOasis%20Vegan%20Veggie%20Parlor!5e0!3m2!1sen!2sus!4v1606176739221!5m2!1sen!2sus" width="600" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    `
+    map.classList.add("mapBox")
     homeContent.appendChild(map)
 
     let delivery = document.createElement("div");
@@ -87,28 +90,6 @@ const contactFunction = () => {
     homeContent.appendChild(form)
 
     homeContent.appendChild(br1)
-
-
-
-      // Initialize and add the map
-    function initMap() {
-        // The location of Uluru
-        const uluru = { lat: 42.299525, lng: -71.073629 };
-        // The map, centered at Uluru
-        const map = new google.maps.Map(document.getElementById("map"), {
-            zoom: 17,
-            center: uluru,
-        });
-        // The marker, positioned at Uluru
-        const marker = new google.maps.Marker({
-            position: uluru,
-            map: map,
-        });
-    }
-
-    initMap()
-
-
 
 
     let footer = document.createElement("div");
