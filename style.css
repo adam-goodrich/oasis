@@ -266,7 +266,7 @@ a {
 }
 
 .featuredFood {
-    background-image: url("./images/buffet.png");
+    background-image: url("./images/buffet.jpg");
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
@@ -280,7 +280,7 @@ a {
 }
 
 .featuredFood2 {
-    background-image: url("./images/smoothies.png");
+    background-image: url("./images/smoothies.jpg");
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     position: relative;
@@ -350,6 +350,7 @@ a {
 
 .form {
     width: 45%;
+    min-width: 300px;
     line-height: 1.1;
     display: flex;
     justify-content: center;
@@ -635,7 +636,7 @@ dialog {
     }
 
     .featuredFood {
-        background-image: url("./images/buffet.webp");
+        background-image: url("./images/buffet.jpg");
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         height: 500px;
@@ -646,7 +647,7 @@ dialog {
     }
     
     .featuredFood2 {
-        background-image: url("./images/smoothies.webp");
+        background-image: url("./images/smoothies.jpg");
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         position: relative;
@@ -850,7 +851,7 @@ dialog {
     }
 
     .featuredFood {
-        background-image: url("./images/buffet.webp");
+        background-image: url("./images/buffet.jpg");
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         height: 500px;
@@ -861,7 +862,7 @@ dialog {
     }
     
     .featuredFood2 {
-        background-image: url("./images/smoothies.webp");
+        background-image: url("./images/smoothies.jpg");
         border-top: 3px solid black;
         border-bottom: 3px solid black;
         position: relative;
