@@ -588,11 +588,11 @@ dialog {
     margin-left: 500px;
 }
 
-#map {
+.mapBox {
     border: 3px solid black;
-    height: 600px;
+    height: 605px;
     /* The height is 400 pixels */
-    width: 70%;
+    width: 605px;
     margin: auto;
     /* The width is the width of the web page */
 }
