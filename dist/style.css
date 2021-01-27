@@ -601,6 +601,16 @@ dialog {
 
 
 @media only screen and (max-width: 1050px) {
+    .image {
+        display: block;
+        object-fit: cover;
+        width: 50vw;;
+        min-width: 150px;
+        border: 3px solid black;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0 0 5px 2px rgb(158, 158, 158);
+    }
 
     dialog {
         padding: 5px;
