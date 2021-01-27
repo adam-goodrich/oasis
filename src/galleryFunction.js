@@ -105,41 +105,41 @@ const galleryFunction = () => {
         p1.classList.add("container")
         p1.classList.add("grid-item")
 
-        if (is_chrome) {
-            console.log("here")
-            p1.onclick = () => { 
-                homeContent.style.opacity = "0";
-                nav.style.opacity = "0";
-                dialog.showModal(); 
+        // if (is_chrome) {
+        //     console.log("here")
+        //     p1.onclick = () => { 
+        //         homeContent.style.opacity = "0";
+        //         nav.style.opacity = "0";
+        //         dialog.showModal(); 
 
-            }
+        //     }
         
 
-            let dialog = document.createElement("dialog");
-            dialog.id = "dialog"
-            menu.appendChild(dialog)
-            dialog.style.zIndex = "-1000";
-            let closeButton = document.createElement("button");
-            closeButton.classList.add("right");
-            closeButton.innerHTML = "X"
-            closeButton.id = "closeButton"
+        //     let dialog = document.createElement("dialog");
+        //     dialog.id = "dialog"
+        //     menu.appendChild(dialog)
+        //     dialog.style.zIndex = "-1000";
+        //     let closeButton = document.createElement("button");
+        //     closeButton.classList.add("right");
+        //     closeButton.innerHTML = "X"
+        //     closeButton.id = "closeButton"
 
-            let imageBig = document.createElement("img")
-            imageBig.classList.add("bigImage")
-            imageBig.src = galleryList[i].src
+        //     let imageBig = document.createElement("img")
+        //     imageBig.classList.add("bigImage")
+        //     imageBig.src = galleryList[i].src
             
-            dialog.appendChild(imageBig)
+        //     dialog.appendChild(imageBig)
 
 
-            dialog.appendChild(closeButton)
-            closeButton.onclick = () => {
-                homeContent.style.opacity = "1";
-                nav.style.opacity = "1";
-                dialog.close()
-            }
-        } else {
-            console.log("here2")
-        }
+        //     dialog.appendChild(closeButton)
+        //     closeButton.onclick = () => {
+        //         homeContent.style.opacity = "1";
+        //         nav.style.opacity = "1";
+        //         dialog.close()
+        //     }
+        // } else {
+        //     console.log("here2")
+        // }
 
 
         p1.innerHTML = `
