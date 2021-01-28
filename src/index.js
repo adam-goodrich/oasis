@@ -1,14 +1,3 @@
-import homeFunction from './homeFunction'
+import homeFunction from "./homeFunction";
 
-
-
-homeFunction()
-
-
-
-
-
-
-
-
-
+homeFunction();
