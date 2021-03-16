@@ -489,7 +489,7 @@ th {
   font-size: 30px;
   width: 20vw;
   height: 20vw;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 dialog {
