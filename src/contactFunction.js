@@ -45,7 +45,7 @@ const contactFunction = () => {
 
   let p1 = document.createElement("p");
   p1.classList.add("address");
-  p1.innerHTML = `340 Washington St, Boston, MA 02121<br><a href="tel:6172379033">(617) 237-9033</a><br>`;
+  p1.innerHTML = `340 Washington St, Dorchester, MA 02121<br><a href="tel:6172379033">(617) 237-9033</a><br>`;
 
   let br1 = document.createElement("br");
   let br2 = document.createElement("br");

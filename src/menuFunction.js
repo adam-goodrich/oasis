@@ -9,6 +9,7 @@ let Juices = [];
 let grains = [];
 let sides = [];
 let options = [];
+let brunch = [];
 
 class Meal {
   constructor(name, price, desc) {
@@ -50,6 +51,14 @@ class Side {
   }
 }
 
+class Brunch {
+  constructor(name, price, desc) {
+    this.name = name;
+    this.price = price;
+    this.desc = desc;
+  }
+}
+
 class Options {
   constructor(name, desc) {
     this.name = name;
@@ -83,6 +92,11 @@ function addFoodToMenu(category, name, price, desc) {
     sides.push(newItem);
   }
 
+  if (category == "brunch") {
+    let newItem = new Side(name, price, desc);
+    brunch.push(newItem);
+  }
+
   if (category == "options") {
     let newItem = new Options(name, desc);
     options.push(newItem);
@@ -94,19 +108,19 @@ addFoodToMenu(
   "options",
   "Grain Options",
   "",
-  "Brown Rice, Wheat Bulgar, African Couscous, Quinoa ($1.25 extra)"
+  "Brown Rice, Wheat Bulgar, African Couscous, Quinoa ($1.25 extra)."
 );
 addFoodToMenu(
   "options",
   "Stew Options",
   "",
-  "Miser Wat (Ethiopian Spicy Lentils), Coconut Lentils, Curry Chickpeas, Spicy Veggie Korma"
+  "Miser Wat (Ethiopian Spicy Lentils), Coconut Lentils, Curry Chickpeas, Spicy Veggie Korma."
 );
 addFoodToMenu(
   "options",
   "Veggie Options",
   "",
-  "Curry Cabbage, Seasoned Kale, Oasis Veggie Delight"
+  "Curry Cabbage, Seasoned Kale, Oasis Veggie Delight."
 );
 
 // MEALS
@@ -119,28 +133,28 @@ addFoodToMenu(
 addFoodToMenu(
   "meal",
   "Large Plate",
-  "$15.49",
-  "Serving 1 Grain, 2 Stews, and 2 Veggies"
+  "$16.11",
+  "Serving 1 Grain, 2 Stews, and 2 Veggies."
 );
 addFoodToMenu(
   "meal",
   "Medium Plate",
   "13.15",
-  "Serving 1 Grain, 2 Stews, and 1 Veggie"
+  "Serving 1 Grain, 2 Stews, and 1 Veggie."
 );
 addFoodToMenu(
   "meal",
   "Small Plate",
   "$9.75",
-  "Serving of 1 Grain, 1 Stew, and 1 Veggie"
+  "Serving of 1 Grain, 1 Stew, and 1 Veggie."
 );
 
 // GRAIN BOWLS
 addFoodToMenu(
   "grain",
-  "Quinoa Veggie Bowl",
+  "Dr. Sebi bowl",
   "$14.45",
-  "Oasis savory herb sauce drizzled over seasoned quinoa tossed with a medley of raw veggies, sesame seeds or chia seeds, and dried cranberries."
+  "Quinoa, cucumbers, kale, seasonal veggies with lime."
 );
 addFoodToMenu(
   "grain",
@@ -158,7 +172,7 @@ addFoodToMenu(
   "grain",
   "African Pot Bowl",
   "$14.45",
-  "Our spicy Oasis African couscous with fresh kale along side an array of fresh veggies. (Contains Gluten)"
+  "Our spicy Oasis African couscous with fresh kale along side an array of fresh veggies. (Contains Gluten)."
 );
 addFoodToMenu(
   "grain",
@@ -177,19 +191,19 @@ addFoodToMenu(
 addFoodToMenu(
   "wrap",
   "Oasis Vegan Burritto",
-  "$12.84",
+  "$13.35",
   "Melted vegan cheese, seasoned brown rice, fresh veggies, miser wat, and Oasis dressings."
 );
 addFoodToMenu(
   "wrap",
   "The Oshun Wrap",
-  "$12.84",
+  "$13.35",
   "Melted vegan cheese over kale and curry chickpea stew."
 );
 addFoodToMenu(
   "wrap",
   "The Shango Wrap",
-  "$12.84",
+  "$13.35",
   "Miser wat, spicy veggies, and vegan cheese (cheese optional)."
 );
 addFoodToMenu(
@@ -199,38 +213,110 @@ addFoodToMenu(
   "Savory seasoned mushrooms, red onions, tomatoes, red bell peppers, all grilled with melted vegan cheese."
 );
 
+addFoodToMenu(
+  "wrap",
+  "Hummus Wrap",
+  "$12.02",
+  "Hummus, fresh veggies, cucumbers, kale, red onions, OVVP house dressing."
+);
+
+addFoodToMenu(
+  "wrap",
+  "Pizza Wrap",
+  "$13.35",
+  "Basil tomato spread with melted vegan cheese, garlic, and fresh veggies."
+);
+
+addFoodToMenu(
+  "wrap",
+  "Vegan Grilled Cheese ",
+  "$7.38",
+  "Vegan cheese wrapped in a flour tortilla."
+);
+
 // JUICES
 addFoodToMenu(
   "juice",
   "Mango Moon",
-  "$6.96",
-  "Mangos, turmeric, almond milk, cinnamon, agave, Spice"
+  "16oz - $6.96 | 24oz - $8.03",
+  "Mangos, turmeric, almond milk, cinnamon, agave, Spice."
 );
 addFoodToMenu(
   "juice",
   "The Oasis Ginger Bomb Juice",
-  "$6.96",
+  "16oz - $6.96 | 24oz - $8.03",
   "Fresh squeezed ginger root, organic apple juice, and a dash of aid digesting cayenne."
 );
 addFoodToMenu(
   "juice",
   "Green Bliss Juice",
-  "$6.96",
+  "16oz - $6.96 | 24oz - $8.03",
   "Organic apple juice, a sprinkle of high nutritious spirulina and moringa, fresh kale, mint leaves, and a variety of green veggies."
 );
 addFoodToMenu(
   "juice",
   "Golden Milk Shake",
-  "$6.96",
+  "16oz - $6.96 | 24oz - $8.03",
   "Natural anti-inflammatory turmeric root, a hint of cinnamon and other spices."
+);
+
+addFoodToMenu(
+  "juice",
+  "Sea Moss",
+  "16oz - $6.96 | 24oz - $8.03",
+  "Sea moss, cinnamon, almond milk."
+);
+
+addFoodToMenu(
+  "juice",
+  "Nutty Life",
+  "16oz - $6.96 | 24oz - $8.03",
+  "Almonds, walnuts, cashews, agave, and spices with an almond milk base."
+);
+
+addFoodToMenu(
+  "juice",
+  "Purple Rain",
+  "16oz - $6.96 | 24oz - $8.03",
+  "Apple juice, blueberry, goji berry, moringa, and agave."
+);
+
+addFoodToMenu(
+  "juice",
+  "Limeade",
+  "16oz - $6.96 | 24oz - $8.03",
+  "Alkaline Water, fresh lime, and agave."
 );
 
 // SIDES
 addFoodToMenu(
   "side",
   "The Oasis Mac and Cheese Pie",
-  "$5.89",
-  "Seasoned pasta and vegan cheese slowly baked to perfection! (Contains Gluten)"
+  "$6.13",
+  "Seasoned pasta and vegan cheese slowly baked to perfection! (Contains Gluten)."
+);
+
+addFoodToMenu(
+  "side",
+  "Earth Salad",
+  "Small - $5.89 | Large - $7.49",
+  "Carrots, red onions, red bell peppers, green bell peppers, purple and green cabbage with OVVP house dressing."
+);
+
+addFoodToMenu(
+  "side",
+  "Kale Salad",
+  "Small - $5.89 | Large - $7.49",
+  "Kale, cucumbers,  mixed bell peppers, red onions, and OVVP house dressing."
+);
+
+//BRUNCH
+
+addFoodToMenu(
+  "brunch",
+  "Saturday Breakfast Brunch Box",
+  "$16.11",
+  "Vegan pancakes, homefries, tofu/ vegan sausage with veggies."
 );
 
 const menuFunction = () => {
@@ -398,7 +484,7 @@ const menuFunction = () => {
 
   let juiceTitle = document.createElement("div");
   juiceTitle.classList.add("titlecard");
-  juiceTitle.innerHTML = "ORGANIC OASIS JUICES & SMOOTHIES";
+  juiceTitle.innerHTML = "OASIS JUICE BAR";
   homeContent.appendChild(juiceTitle);
 
   let juiceFlexContainer = document.createElement("div");
@@ -445,6 +531,37 @@ const menuFunction = () => {
         ${sides[i].desc}
         </p>`;
     sideFlexContainer.appendChild(p1);
+  }
+
+  // BRUNCH SECTION
+
+  for (let i = 0; i < 2; i++) {
+    let breaker = document.createElement("br");
+    homeContent.appendChild(breaker);
+  }
+
+  let brunchLine = document.createElement("div");
+  brunchLine.classList.add("line");
+  homeContent.appendChild(brunchLine);
+
+  let brunchTitle = document.createElement("div");
+  brunchTitle.classList.add("titlecard");
+  brunchTitle.innerHTML = "BRUNCH";
+  homeContent.appendChild(brunchTitle);
+
+  let brunchFlexContainer = document.createElement("div");
+  brunchFlexContainer.classList.add("flex-container");
+  homeContent.appendChild(brunchFlexContainer);
+
+  for (let i = 0; i < brunch.length; i++) {
+    let p1 = document.createElement("div");
+    p1.classList.add("card");
+    p1.innerHTML = `
+          <b>${brunch[i].name} - ${brunch[i].price}</b>
+          <p style="font-size:87%; color:black; line-height:1.2; font-weight: 20; padding: 10px;">
+          ${brunch[i].desc}
+          </p>`;
+    brunchFlexContainer.appendChild(p1);
   }
 
   //FOOTER

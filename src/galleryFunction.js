@@ -29,6 +29,10 @@ function addPic(src, alt, text) {
 }
 
 addPic("./images/home.jpg", "Photo of store front", "Our Home");
+addPic("./images/submit-image1.jpeg", "photo of noodle bowl", " ");
+addPic("./images/submit-image2.jpg", "photo of our food options", " ");
+addPic("./images/submit-image3.jpg", "photo of more food options", " ");
+addPic("./images/submit-image4.jpg", "photo of a medium plate", " ");
 addPic("./images/pancake.jpg", "photo of pancakes", "OVVP Pancakes");
 addPic("./images/chopsuey.jpg", "Photo of Vegan Chop Suey", "Vegan Chop Suey");
 addPic("./images/mango.jpg", "Photo of Mango Smoothie", "Mango Moon Smoothie");
@@ -121,45 +125,8 @@ const galleryFunction = () => {
     p1.classList.add("container");
     p1.classList.add("grid-item");
 
-    // if (is_chrome) {
-    //     console.log("here")
-    //     p1.onclick = () => {
-    //         homeContent.style.opacity = "0";
-    //         nav.style.opacity = "0";
-    //         dialog.showModal();
-
-    //     }
-
-    //     let dialog = document.createElement("dialog");
-    //     dialog.id = "dialog"
-    //     menu.appendChild(dialog)
-    //     dialog.style.zIndex = "-1000";
-    //     let closeButton = document.createElement("button");
-    //     closeButton.classList.add("right");
-    //     closeButton.innerHTML = "X"
-    //     closeButton.id = "closeButton"
-
-    //     let imageBig = document.createElement("img")
-    //     imageBig.classList.add("bigImage")
-    //     imageBig.src = galleryList[i].src
-
-    //     dialog.appendChild(imageBig)
-
-    //     dialog.appendChild(closeButton)
-    //     closeButton.onclick = () => {
-    //         homeContent.style.opacity = "1";
-    //         nav.style.opacity = "1";
-    //         dialog.close()
-    //     }
-    // } else {
-    //     console.log("here2")
-    // }
-
     p1.innerHTML = `
         <img src=${galleryList[i].src} alt="${galleryList[i].alt}" class="image">
-        <div class="overlay">
-            <div class="text">${galleryList[i].text}</div>
-        </div>
         `;
     gridContainer.appendChild(p1);
   }

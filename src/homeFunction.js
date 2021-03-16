@@ -57,7 +57,7 @@ const homeFunction = () => {
 
   let address = document.createElement("p");
   address.classList.add("addressFront");
-  address.innerHTML = "340 Washington St, Boston, MA 02121";
+  address.innerHTML = "340 Washington St, Dorchester, MA 02121";
   logoDiv.appendChild(address);
 
   let boxContainer = document.createElement("div");
@@ -93,11 +93,11 @@ const homeFunction = () => {
   hoursTable.innerHTML = `
     <table>
         <tr><th>Monday  -${space}</th><td>Closed</td></tr>
-        <tr><th>Tuesday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Wednesday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Thursday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Friday  -${space}</th><td>8am - 8pm</td></tr>
-        <tr><th>Saturday  -${space}</th><td>8am - 8pm</td></tr>
+        <tr><th>Tuesday  -${space}</th><td>12pm - 7pm</td></tr>
+        <tr><th>Wednesday  -${space}</th><td>12pm - 7pm</td></tr>
+        <tr><th>Thursday  -${space}</th><td>12pm - 7pm</td></tr>
+        <tr><th>Friday  -${space}</th><td>12pm - 7pm</td></tr>
+        <tr><th>Saturday  -${space}</th><td>12pm - 7pm</td></tr>
         <tr><th>Sunday  -${space}</th><td>Closed</td></tr>
     </table>
     `;
