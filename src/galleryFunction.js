@@ -5,16 +5,6 @@ import contactFunction from "./contactFunction";
 
 let galleryList = [];
 
-let is_chrome = false;
-
-if (typeof window.chrome != "object") {
-  // not Chrome
-} else {
-  is_chrome = true;
-}
-
-console.log(is_chrome);
-
 class GalleryImage {
   constructor(src, alt, text) {
     this.src = src;
@@ -84,19 +74,23 @@ const galleryFunction = () => {
   let homeButton = document.createElement("button");
   homeButton.id = "homeButton";
   homeButton.innerHTML = "Home";
+  homeButton.href = "#Home";
 
   let menuButton = document.createElement("button");
   menuButton.id = "menuButton";
   menuButton.innerHTML = "Menu";
+  menuButton.href = "#Menu";
 
   let contactButton = document.createElement("button");
   contactButton.id = "contactButton";
   contactButton.innerHTML = "Contact";
+  contactButton.href = "#Contact";
 
   let galleryButton = document.createElement("button");
   galleryButton.id = "contactButton";
   galleryButton.classList.add("active");
   galleryButton.innerHTML = "Gallery";
+  galleryButton.href = "#Gallery";
 
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);

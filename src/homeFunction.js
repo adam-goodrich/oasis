@@ -15,24 +15,25 @@ const homeFunction = () => {
   homeButton.id = "homeButton";
   homeButton.classList.add("buttonHomeActive");
   homeButton.innerHTML = "Home";
+  homeButton.href = "#Home";
 
   let menuButton = document.createElement("button");
   menuButton.id = "menuButton";
   menuButton.classList.add("buttonHome");
-
   menuButton.innerHTML = "Menu";
+  menuButton.href = "#Menu";
 
   let contactButton = document.createElement("button");
   contactButton.id = "contactButton";
   contactButton.classList.add("buttonHome");
-
   contactButton.innerHTML = "Contact";
+  contactButton.href = "#Contact";
 
   let galleryButton = document.createElement("button");
   galleryButton.id = "galleryButton";
   galleryButton.classList.add("buttonHome");
-
   galleryButton.innerHTML = "Gallery";
+  galleryButton.href = "#Gallery";
 
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);

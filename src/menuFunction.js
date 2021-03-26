@@ -330,19 +330,23 @@ const menuFunction = () => {
   let homeButton = document.createElement("button");
   homeButton.id = "homeButton";
   homeButton.innerHTML = "Home";
+  homeButton.href = "#Home";
 
   let menuButton = document.createElement("button");
   menuButton.classList.add("active");
   menuButton.id = "menuButton";
   menuButton.innerHTML = "Menu";
+  menuButton.href = "#Menu";
 
   let contactButton = document.createElement("button");
   contactButton.id = "contactButton";
   contactButton.innerHTML = "Contact";
+  contactButton.href = "#Contact";
 
   let galleryButton = document.createElement("button");
   galleryButton.id = "galleryButton";
   galleryButton.innerHTML = "Gallery";
+  galleryButton.href = "#Gallery";
 
   nav.appendChild(homeButton);
   nav.appendChild(menuButton);
